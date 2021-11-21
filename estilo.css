@@ -2,7 +2,9 @@ html,
 body,
 .capa {
   height: 100%;
+  overflow: auto;
 }
+
 body {
   background: url(./imagens/capa.png), url(./imagens/ruido.png),
     linear-gradient(50deg, #ff4169, #7c26f8);
@@ -150,4 +152,23 @@ h1 {
 .item-rede-social {
   float: left;
   margin: 2px;
+}
+
+@media (max-width: 767px) {
+  .btn-custom {
+    margin: 10px 15px;
+  }
+
+  .texto-capa h1 {
+    font-size: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .btn-custom {
+    margin: 10px 15px;
+  }
+
+  .texto-capa h1 {
+    font-size: 120px;
+  }
 }
